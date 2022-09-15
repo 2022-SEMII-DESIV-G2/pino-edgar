@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <P>Acceso a Plataforma de Automoviles</P>
-    <P>Iniciar Seción</P>
-
-<body>
-     <form onsubmit="console.log(1)">
-          <div>
+    <body>
+        <div>
+            <h1>Laboratorio#4</h1>     
+            <P>Acceso a Plataforma de Automoviles</P>
+            <P>Iniciar Seción</P>
+            <a href="Parte1.html"=><p>Automoviles</p></a>
+        </div>
+        <Form action=""onsubmit="enviar()">
             <label for="">Correo</label>
-            <input type="Correo">
-          </div>
-          <div>
+            <input type="Correo"> id="Email"
             <label for="">Password</label>
-            <input type="password">
-          </div>      
-          <div>
-            <button>Login</button>
-          </div>
-        </form>    
-</body>
-</html>
+            <input type="password" id="contraseña">
+            <button>Enviar</button>         
+        </Form>
+        </body>  
+        <script>
+            function enviar(){
+                let correo = document.getElementById('correo').value;
+                let contraseña = document.getElementById('Contraseña').value;
+                console.log("correo Electronico = ", Correo, "\nContraseña = ",Password);
+
+            }
+            </script>               
+            </html>
